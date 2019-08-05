@@ -1,12 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".PictureFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/ivUploadPhoto"
+        android:layout_width="365dp"
+        android:layout_height="398dp"
+        android:src="@drawable/uploadphoto"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/btnUploadPhoto"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnUploadPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="upload photo"
+        android:padding="10dp"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/ivUploadPhoto"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
