@@ -111,5 +111,6 @@ public class SignUpActivity extends AppCompatActivity {
     public void transitionToSocialMediaActivity(){
         Intent intent = new Intent(SignUpActivity.this,SocialMediaActivity.class);
         startActivity(intent);
+        finish();
     }
 }
